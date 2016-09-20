@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:ProjectLemon.ViewModels;assembly=ProjectLemon"
+             x:Class="ProjectLemon.Views.FacebookProfilePage"
+             BackgroundColor="Black"
+             Title="Facebook Login">
+  <ContentPage.BindingContext>
+    <viewModels:FacebookViewModel/>
+  </ContentPage.BindingContext>
+
+  <StackLayout x:Name="MainStackLayout"
+               Padding="8,30">
+
+    <StackLayout Orientation="Horizontal"
+                 Padding="0,20,0,50">
+
+      <Image Source="{Binding FacebookProfile.Picture.Data.Url}"
+             HeightRequest="100"
+             WidthRequest="100"
+             VerticalOptions="Start"/>
+
+      <StackLayout Orientation="Vertical">
+
+        <Label Text="{Binding FacebookProfile.Name, StringFormat='Name: {0:N}'}"
+               TextColor="White"
+               Font="Bold"
+               FontSize="22"/>
+
+        <Label Text="Friends: "
+               TextColor="White"
+               Font="Bold"
+               FontSize="22"
+               x:Name ="Friendslbl"/>
+
+
+      </StackLayout>
+
+    </StackLayout>
+
+    <Label Text="{Binding FacebookProfile.AgeRange.Min, StringFormat='Age: {0:N}'}"
+           TextColor="White"
+           FontSize="22"/>
+
+    <Button Text="{Binding FacebookProfile.IsVerified, StringFormat='Logout'}"
+            TextColor="White"
+            BackgroundColor="Gray"
+            Font="Bold"
+            Clicked="FacebookLogout_Clicked"/>
+
+    
+  </StackLayout>
+
+</ContentPage>

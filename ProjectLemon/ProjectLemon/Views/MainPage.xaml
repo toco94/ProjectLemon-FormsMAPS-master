@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectLemon.Views.MainPage"
+             Title="Project Lemon"
+             BackgroundColor="Black">
+             
+  <StackLayout Orientation="Vertical">
+
+    <Label Text="Login with Facebook"
+           TextColor="White"/>
+
+    <Button Text="Login"
+            TextColor="White"
+            BackgroundColor="Gray"
+            Font="Bold"
+            Clicked="LoginWithFacebook_Clicked"/>
+
+  </StackLayout>
+
+</ContentPage>
