@@ -22,7 +22,7 @@ namespace ProjectLemon.Models
     public class RootObject
     {
         public List<Datum> data { get; set; }
-        public Paging paging { get; set; }
+        //public Paging paging { get; set; }
         public Summary summary { get; set; }
     }
 }
