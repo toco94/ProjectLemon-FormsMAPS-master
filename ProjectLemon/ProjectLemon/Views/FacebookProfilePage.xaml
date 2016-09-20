@@ -42,7 +42,7 @@
            TextColor="White"
            FontSize="22"/>
 
-    <Button Text="{Binding FacebookProfile.IsVerified, StringFormat='Logout'}"
+    <Button Text="{Binding FacebookProfile.IsVerified, StringFormat='Main'}"
             TextColor="White"
             BackgroundColor="Gray"
             Font="Bold"

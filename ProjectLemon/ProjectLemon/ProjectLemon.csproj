@@ -39,6 +39,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\FriendsModel.cs" />
+    <Compile Include="Services\CustomMap.cs" />
     <Compile Include="Views\FacebookProfilePage.xaml.cs">
       <DependentUpon>FacebookProfilePage.xaml</DependentUpon>
     </Compile>

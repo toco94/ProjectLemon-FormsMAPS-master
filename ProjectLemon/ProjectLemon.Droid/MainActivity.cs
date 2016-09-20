@@ -6,7 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-
+using Android.Support.V7.Widget;
+//Android.Support.V7.Widget.Toolbar'.
 namespace ProjectLemon.Droid
 {
     [Activity(Label = "ProjectLemon", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]

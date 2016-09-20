@@ -98,9 +98,9 @@ namespace ProjectLemon.Views
             return string.Empty;
         }
 
-        private void FacebookLogout_Clicked(object sender, EventArgs e)
+        private async void FacebookLogout_Clicked(object sender, EventArgs e)
         {
-            accessToken = "";
+            await Navigation.PushAsync(new MapsCsView());
         }
     }
 }
